@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">飞鸽传书</string>
+    <string name="info">当前在线0个用户</string>
+    <string name="file_title">选择要发送的文件</string>
+    <string name="file_path">当前路径：</string>
+    <string name="no_wifi">没有wifi连接，请检查wifi设置后再启动本程序。</string>
+
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray" >
+    
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mainbodytop"
+        android:gravity="bottom|center" >
+        
+        <TextView
+    	android:id="@+id/totalUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18dip" 
+        android:gravity="center"
+        android:text="@string/info" 
+        />
+        
+    </RelativeLayout>
+    
+    <ExpandableListView 
+        android:id="@+id/userlist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="false"
+        android:groupIndicator="@null"
+        android:layout_below="@id/top"
+        />
+        
+    <RelativeLayout
+        android:id="@+id/main_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="3dip"
+        android:layout_marginTop="3dip"
+        android:background="@drawable/headimage_background" >
+
+        <ImageView
+            android:id="@+id/main_self_head"
+            android:src="@drawable/ic_launcher"
+            android:layout_width="36dip"
+            android:layout_height="36dip"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dip"
+        android:layout_toRightOf="@id/main_head"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/myname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dip" 
+            android:text="android飞鸽"
+            />
+
+        <TextView
+            android:id="@+id/mymood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darkgray" 
+            android:text="127.0.0.1"
+            />
+        <LinearLayout 
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="right"
+            >
+            <Button android:id="@+id/refresh"
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_marginRight="10dip"
+        		android:background="@drawable/btn_normal"
+        		android:textColor="@color/white"
+        		android:text="刷新"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    
+        
+</RelativeLayout>

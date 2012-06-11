@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <LinearLayout android:id="@+id/chat_top"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_weight="0"
+        android:background="@color/deepskyblue"
+        android:gravity="center_vertical"
+        >
+        <RelativeLayout 
+            android:id="@+id/re_item_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="0"
+            android:background="@drawable/headimage_background"
+            >
+            
+            <ImageView 
+                android:id="@+id/chat_item_head"
+                android:src="@drawable/ic_launcher"
+                android:layout_width="36dip"
+                android:layout_height="36dip"
+                android:layout_centerInParent="true"
+                />
+            
+        </RelativeLayout>
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            
+            <TextView android:id="@+id/chat_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                />
+            
+            <TextView android:id="@+id/chat_mood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkgray" 
+                />
+            
+        </LinearLayout>
+        
+        <Button android:id="@+id/chat_quit"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_marginRight="15dip"
+            android:layout_weight="0"
+            android:background="@drawable/chat_quit_nor"
+            android:onClick="onClick"
+            />
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/body"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        
+        <ListView android:id="@+id/chat_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:cacheColorHint="@null"
+            android:divider="@drawable/divider_group"
+            android:transcriptMode="alwaysScroll"
+            />
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_weight="0"
+            android:background="@color/gray_blue"
+            android:gravity="center_vertical"
+            >
+            <EditText android:id="@+id/chat_input"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dip"
+                android:singleLine="true"
+                />
+            
+            <Button android:id="@+id/chat_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/button"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="4dip"
+                android:onClick="onClick"
+                android:text="发送"
+                android:textColor="@color/white"
+                android:textSize="18dip"
+                />
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

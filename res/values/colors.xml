@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="c1">#a8e7ef</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#EEEEFF</color>
+    <color name="gray_blue">#DDDDFF</color>
+    <color name="darkgray">#AAAAAA</color>
+    <color name="lightblue">#E1FFFF</color>
+    <color name="deepskyblue">#00BFFF</color>
+    <color name="alpha">#00000000</color>
+    <color name="chat_myself">#0D3EDE</color>
+    <color name="chat_other">#519A2D</color>
+    <drawable name="silver">#00ffffff</drawable>   <!-- 透明色 -->
+
+</resources>
